@@ -18,7 +18,7 @@ public class NumberCodeController {
         double tempCode = (Math.random() + 1) * Math.pow(10, size - 1);
         System.out.println(tempCode);
         int code = (int)tempCode;
-        System.out.println(code);
+        System.out.println("generate the code: " + code);
 
         NumberCodeResponse numberCodeResponse = new NumberCodeResponse();
         numberCodeResponse.setNumberCode(code);
