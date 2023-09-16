@@ -61,4 +61,13 @@ public class ResponseResult<T> {
         return new ResponseResult().setCode(CommonStatusEnum.FAIL.getCode())
                 .setMessage(CommonStatusEnum.FAIL.getMessage());
     }
+
+    /**
+     * 响应失败，错误码和提示信息自定义
+     * @return
+     */
+    public static ResponseResult fail(String message){
+        return new ResponseResult().setCode(CommonStatusEnum.FAIL.getCode())
+                .setMessage(message);
+    }
 }
