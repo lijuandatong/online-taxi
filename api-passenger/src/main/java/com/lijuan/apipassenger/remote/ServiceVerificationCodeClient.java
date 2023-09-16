@@ -1,4 +1,4 @@
-package com.lijuan.remote;
+package com.lijuan.apipassenger.remote;
 
 import com.lijuan.internalcommon.dto.ResponseResult;
 import com.lijuan.internalcommon.response.NumberCodeResponse;

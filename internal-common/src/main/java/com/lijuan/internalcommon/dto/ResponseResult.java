@@ -24,6 +24,17 @@ public class ResponseResult<T> {
     }
 
     /**
+     * 响应成功，data为空
+     * @param <T>
+     * @return
+     */
+    public static <T> ResponseResult success(){
+        return new ResponseResult().setCode(CommonStatusEnum.SUCCESS.getCode())
+                .setMessage(CommonStatusEnum.SUCCESS.getMessage())
+                .setData("");
+    }
+
+    /**
      * 响应失败，错误码和提示信息自定义
      * @return
      */

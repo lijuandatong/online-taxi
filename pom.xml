@@ -17,6 +17,7 @@
         <module>api-passenger</module>
         <module>internal-common</module>
         <module>service-verificationcode</module>
+        <module>service-passenger-user</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -36,6 +37,16 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>1.18.24</version>
+        </dependency>
+        <dependency>
+            <groupId>com.lijuan</groupId>
+            <artifactId>internal-common</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.auth0</groupId>
+            <artifactId>java-jwt</artifactId>
+            <version>3.14.0</version>
         </dependency>
     </dependencies>
 
