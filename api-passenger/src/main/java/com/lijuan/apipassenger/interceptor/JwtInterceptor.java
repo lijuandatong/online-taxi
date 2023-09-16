@@ -29,6 +29,9 @@ public class JwtInterceptor implements HandlerInterceptor {
         } catch(AlgorithmMismatchException e){
             resultStr = "token invalid";
             result = false;
+        } catch (Exception e){
+            resultStr = "token invalid";
+            result = false;
         }
 
         if(!result){
